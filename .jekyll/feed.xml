@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 21 Aug 2016 12:00:05 +0100</pubDate>
+    <lastBuildDate>Sun, 21 Aug 2016 12:00:05 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Optimized Jekyll site with Grunt</title>
+        <description>&lt;p&gt;I have started developing static sites with &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; in May. For everyone who don’t know what it is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I liked the idea of modules in site project that eventually will generate static website. Furthermore &lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages/&quot;&gt;GitHub Pages&lt;/a&gt; can generate and host it for you, so you get &lt;strong&gt;free hosting&lt;/strong&gt; and &lt;strong&gt;push to deploy&lt;/strong&gt; ideology.&lt;/p&gt;
+
+&lt;p&gt;That’s why it was the perfect choice for &lt;a href=&quot;https://github.com/gdg-x/zeppelin&quot;&gt;Project Zeppelin&lt;/a&gt; - free site template for conferences (mostly for GDG DevFest, but for sure you can use it as you want). Unfortunately, there are limitations …&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;View &lt;a href=&quot;http://o.zasadnyy.com/blog/optimized-jekyll-site-with-grunt/&quot;&gt;full article&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 31 Jan 2015 19:12:17 +0000</pubDate>
+        <link>/blog/optimized-jekyll-site-with-grunt</link>
+        <guid isPermaLink="true">/blog/optimized-jekyll-site-with-grunt</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>grunt</category>
+        
+        <category>web performance</category>
+        
+      </item>
+    
+  </channel>
+</rss>
