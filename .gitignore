@@ -1,8 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
-.jekyll/*
-*.tmp
 node_modules
 bower_components
 dist
