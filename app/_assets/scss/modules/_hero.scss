@@ -1,3 +1,13 @@
 .hero {
   height: 400px;
+  width: 100%;
+  background-image: url('http://www.placehold.it/2000x400');
+  background-size: cover;
+  display: table;
+
+  .container {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+  }
 }

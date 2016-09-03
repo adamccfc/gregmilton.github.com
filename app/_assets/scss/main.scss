@@ -1,4 +1,9 @@
+// Variables
+@import "variables";
+
 // Modules and Variables
+@import "modules/hero";
+@import "modules/typography";
 
 // Third-party
 @import "vendor/bootstrap-custom";
@@ -6,3 +11,5 @@
 
 // Partials
 @import "partials/base";
+@import "partials/global";
+@import "partials/header";

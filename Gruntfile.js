@@ -178,16 +178,16 @@ module.exports = function(grunt) {
                 }]
             }
         },
-        uncss: {
-            options: {
-                htmlroot: '<%= app.dist %>/<%= app.baseurl %>',
-                report: 'gzip'
-            },
-            dist: {
-                src: '<%= app.dist %>/<%= app.baseurl %>/**/*.html',
-                dest: '<%= app.dist %>/<%= app.baseurl %>/css/blog.css'
-            }
-        },
+        // uncss: {
+        //     options: {
+        //         htmlroot: '<%= app.dist %>/<%= app.baseurl %>',
+        //         report: 'gzip'
+        //     },
+        //     dist: {
+        //         src: '<%= app.dist %>/<%= app.baseurl %>/**/*.html',
+        //         dest: '<%= app.dist %>/<%= app.baseurl %>/css/blog.css'
+        //     }
+        // },
         autoprefixer: {
             options: {
                 browsers: ['last 3 versions']
@@ -346,7 +346,7 @@ module.exports = function(grunt) {
         'svgmin',
         'copy',
         'sass:dist',
-        'uncss',
+        // 'uncss',
         'autoprefixer',
         'cssmin',
         'uglify:dist',
