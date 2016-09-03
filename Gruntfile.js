@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 tasks: ['jekyll:server']
             },
             images: {
-                files: ['<%= app.source %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'],
+                files: ['<%= app.source %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}'],
                 tasks: ['copy:server']
             },
             livereload: {
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                     '.jekyll/**/*.{html,yml,md,mkd,markdown}',
                     '.tmp/<%= app.baseurl %>/css/*.css',
                     '.tmp/<%= app.baseurl %>/js/*.js',
-                    '.tmp/<%= app.baseurl %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+                    '.tmp/<%= app.baseurl %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}'
                 ]
             }
         },
@@ -148,7 +148,10 @@ module.exports = function(grunt) {
         },
         sass: {
             options: {
-                includePaths: ['bower_components/bootstrap-sass/assets/stylesheets']
+                includePaths: [
+                    'bower_components/bootstrap-sass/assets/stylesheets',
+                    'bower_components/font-awesome/scss',
+                ]
             },
             server: {
                 options: {
@@ -246,19 +249,35 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img',
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/images',
                     src: '**/*.{jpg,jpeg,png,gif}',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/img'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/images'
                 }]
+            }
+        },
+        concat: {
+            jsLibs: {
+                src:
+                    [
+                        'bower_components/jquery/dist/jquery.js',
+                        'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js'
+                    ],
+                dest: 'app/js/project-libs.js'
+            },
+            app: {
+                src: [
+                    // Add js files here
+                ],
+                dest:'app/js/project-app.js'
             }
         },
         svgmin: {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img',
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/images',
                     src: '**/*.svg',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/img'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/images'
                 }]
             }
         },
@@ -268,16 +287,16 @@ module.exports = function(grunt) {
                     expand: true,
                     dot: true,
                     cwd: '<%= app.source %>',
-                    src: ['img/**/*'],
+                    src: ['images/**/*'],
                     dest: '.tmp/<%= app.baseurl %>'
                 }]
             },
-            glyphicons: {
+            fontAwesome: {
                 files: [{
                     expand: true,
-                    cwd: 'bower_components/bootstrap-sass/assets/fonts/',
+                    cwd: 'bower_components/font-awesome/fonts',
                     src: '**',
-                    dest: 'app/fonts'
+                    dest: 'app/fonts/'
                 }]
             }
         },
@@ -305,9 +324,11 @@ module.exports = function(grunt) {
             'clean:server',
             'jekyll:server',
             'sass:server',
+            'copy',
             'autoprefixer:server',
             'uglify:server',
             'connect:livereload',
+            'concat',
             'watch'
         ]);
     });
@@ -321,6 +342,7 @@ module.exports = function(grunt) {
         'clean:dist',
         'jekyll:dist',
         'imagemin',
+        'concat',
         'svgmin',
         'copy',
         'sass:dist',
