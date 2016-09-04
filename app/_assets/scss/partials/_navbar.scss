@@ -1,0 +1,32 @@
+.navbar-default {
+  background-color: $white;
+  border-color: $border-grey;
+
+  .navbar-nav {
+    padding: 15px 0;
+
+    > li {
+      > a {
+        text-transform: uppercase;
+        color: #8a959e;
+        transition: all ease 0.5s;
+        font-family: $title-font;
+
+        &:hover {
+          color: $brand-primary;
+        }
+
+      }
+      .quote {
+        background-color: $brand-primary;
+        color: $white;
+        transition: all ease 0.5s;
+
+        &:hover {
+          background-color: darken($brand-primary, 10%);
+          color: $white;
+        }
+      }
+    }
+  }
+}

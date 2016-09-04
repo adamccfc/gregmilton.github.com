@@ -1,4 +1,4 @@
-<div class="contact-details">
+<!-- <div class="contact-details">
   <div class="container">
     <ul class="list-unstyled list-inline">
       <li><span class="fa fa-phone"></span> 01443 472223</li>
@@ -6,10 +6,10 @@
       <li><span class="fa fa-envelope"></span> greghmilton@hotmail.co.uk</li>
     </ul>
   </div>
-</div>
+</div> -->
 
 <!-- Navigation -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -21,7 +21,7 @@
       <a class="navbar-brand" href="#">Brand</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         {% if page.active == "home" %}
           <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
@@ -48,6 +48,7 @@
         {% else %}
           <li><a href="/contact">Contact</a></li>
         {% endif %}
+        <li><a class="quote" href="">Get Quote</a></li>
       </ul>
     </div>
   </div>

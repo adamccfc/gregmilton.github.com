@@ -1,3 +1,7 @@
+// Third-party
+@import "vendor/bootstrap-custom";
+@import "font-awesome";
+
 // Variables
 @import "variables";
 
@@ -5,11 +9,10 @@
 @import "modules/hero";
 @import "modules/typography";
 
-// Third-party
-@import "vendor/bootstrap-custom";
-@import "font-awesome";
-
 // Partials
 @import "partials/base";
+@import "partials/footer";
 @import "partials/global";
 @import "partials/header";
+@import "partials/navbar";
+

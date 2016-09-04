@@ -1,7 +1,7 @@
 .hero {
   height: 400px;
   width: 100%;
-  background-image: url('http://www.placehold.it/2000x400');
+  background: url('http://www.placehold.it/2000x400') no-repeat center center;
   background-size: cover;
   display: table;
 
@@ -9,5 +9,14 @@
     display: table-cell;
     vertical-align: middle;
     height: 100%;
+
+    span {
+      display: block;
+
+      &.title {
+        font-size: 32px;
+        font-family: $title-font;
+      }
+    }
   }
 }
