@@ -1,0 +1,37 @@
+.btn {
+  padding: 12px 17px;
+  transition: all ease 0.5s;
+}
+
+.btn-primary {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+
+  &:hover {
+    background-color: darken($brand-primary, 10%);
+    border-color: darken($brand-primary, 10%);
+  }
+}
+
+.btn-primary-ghost {
+  background-color: none;
+  border-color: $brand-primary;
+  color: $brand-primary;
+
+  &:hover {
+    color: $white;
+    background-color: $brand-primary;
+  }
+}
+
+.btn-secondary {
+  background-color: $brand-secondary;
+  border-color: $brand-secondary;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: darken($brand-secondary, 10%);
+    border-color: darken($brand-secondary, 10%);
+  }
+}

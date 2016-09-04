@@ -1,6 +1,6 @@
 .navbar-default {
   background-color: $white;
-  border-color: $border-grey;
+  border-color: $grey-border;
 
   .navbar-nav {
     padding: 15px 0;
@@ -8,9 +8,10 @@
     > li {
       > a {
         text-transform: uppercase;
-        color: #8a959e;
+        color: $grey;
         transition: all ease 0.5s;
         font-family: $title-font;
+        padding: 12px 17px;
 
         &:hover {
           color: $brand-primary;
@@ -18,12 +19,15 @@
 
       }
       .quote {
-        background-color: $brand-primary;
-        color: $white;
+        border: 1px solid $brand-primary;
+        background-color: none;
+        color: $brand-primary;
         transition: all ease 0.5s;
+        border-radius: 4px;
 
         &:hover {
-          background-color: darken($brand-primary, 10%);
+          border: 1px solid $brand-primary;
+          background-color: $brand-primary;
           color: $white;
         }
       }
