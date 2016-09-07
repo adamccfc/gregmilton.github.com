@@ -1,9 +1,19 @@
 body {
   font-family: $primary-font;
+  background-color: #f3f3f3;
   color: $grey;
   padding-top: 50px;
 }
 
 img {
   max-width: 100%;
+}
+
+.row-xs {
+  margin-left: -3px;
+  margin-right: -3px;
+
+  > [class*="col-"] {
+    padding: 0 4px;
+  }
 }
