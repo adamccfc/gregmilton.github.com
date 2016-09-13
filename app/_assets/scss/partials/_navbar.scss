@@ -16,7 +16,9 @@
         &:hover {
           color: $brand-primary;
         }
-
+        &:focus {
+          color: $brand-primary;
+        }
       }
       .quote {
         border: 1px solid $brand-primary;

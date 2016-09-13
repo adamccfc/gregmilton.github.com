@@ -5,6 +5,13 @@ body {
   padding-top: 50px;
 }
 
+a {
+  color: $brand-primary;
+  &:hover {
+    color: darken($brand-primary, 10%);
+  }
+}
+
 img {
   max-width: 100%;
 }
