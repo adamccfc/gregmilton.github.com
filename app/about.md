@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-About Greg
+# About Greg
 
 Been in the trade for nearly 30 years, whilst learning a wide range of trades including:
 - stonework
