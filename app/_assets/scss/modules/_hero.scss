@@ -4,6 +4,22 @@
   background-size: cover;
   background-position: center;
   display: table;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background: #121315;
+    animation: fadeOut 600ms ease-in;
+    animation-delay: 1000ms;
+  }
 
   @media (max-width: 479px) and (min-width: 0) {
     height: 320px - 76px;
