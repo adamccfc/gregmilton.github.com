@@ -1,0 +1,9 @@
+@import "reset";
+@import "syntax";
+
+// Include bootstrap grid
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+
+// Base
+@import "base/vars";
+@import "base/base";
