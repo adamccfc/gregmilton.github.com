@@ -1,0 +1,21 @@
+.home-intro {
+  color: $white;
+  padding: 100px 0;
+  background: url(/images/awesomephotodude.jpg) no-repeat center $brand-primary;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    transform:translate(0%, -50%);
+    -webkit-transform:translate(0%, -50%);
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}

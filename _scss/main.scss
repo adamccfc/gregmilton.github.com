@@ -1,4 +1,3 @@
-@import "reset";
 @import "syntax";
 
 // Include bootstrap grid
@@ -6,4 +5,11 @@
 
 // Base
 @import "base/vars";
+@import "base/typography";
 @import "base/base";
+
+// Helpers
+@import "helpers/animations";
+
+// Page specific styles
+@import "pages/home";

@@ -1,4 +1,7 @@
 name: Greg Milton
+telephone: 01443 472223
+mobile: 07711 686833
+email: greghmilton@hotmail.co.uk
 markdown: redcarpet
 highlighter: null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
