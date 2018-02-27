@@ -1648,13 +1648,17 @@ body {
             transform: none; } }
 
 .animate-pop-in {
-  -webkit-animation: pop-in 0.6s ease-out forwards;
-          animation: pop-in 0.6s ease-out forwards; }
+  -webkit-animation: pop-in ease-out 1s forwards;
+          animation: pop-in ease-out 1s forwards;
+  opacity: 0; }
+  .animate-pop-in.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
 
 .home-intro {
   color: #fff;
   padding: 100px 0;
-  background: url(/images/awesomephotodude.jpg) no-repeat center #FC6A6C;
+  background: #FC6A6C;
   background-size: cover;
   height: 100vh;
   position: relative; }
