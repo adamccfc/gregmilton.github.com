@@ -10,12 +10,6 @@
 }
 
 .animate-pop-in {
-  animation: pop-in ease-out 1s forwards;
+  animation: pop-in ease-out 1.5s forwards;
   opacity: 0;
-
-  &.delay-1s {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
-  }
 }
