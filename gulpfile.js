@@ -1,4 +1,5 @@
 var gulp        = require('gulp');
+var eslint      = require('gulp-eslint');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
@@ -51,12 +52,27 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+// Check js files
+gulp.task('lint', function() {
+  return gulp.src('js/**').pipe(eslint({
+    'rules':{
+        'quotes': [1, 'single'],
+        'semi': [1, 'always'],
+        'indent': ['error', 2]
+    }
+  }))
+  .pipe(eslint.format())
+  // Brick on failure to be super strict
+  .pipe(eslint.failOnError());
+});
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/**/*.scss', ['sass']);
+    gulp.watch('js/**/*.js', ['lint']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
