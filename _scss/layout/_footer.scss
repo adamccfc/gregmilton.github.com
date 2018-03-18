@@ -33,16 +33,38 @@
   &__sub {
     display: block;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: #1D1C20;
     color: lighten(#1D1C20, 20%);
 
     a {
-      color: $brand-primary;
+      color: lighten(#1D1C20, 50%);
       text-decoration: none;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
-        color: darken($brand-primary, 10%);
+        color: lighten(#1D1C20, 60%);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    .copyright {
+      float: left;
+
+      @media(max-width: $screen-md) {
+        float: none;
+      }
+    }
+
+    .developed {
+      float: right;
+
+      @media(max-width: $screen-md) {
+        float: none;
       }
     }
   }

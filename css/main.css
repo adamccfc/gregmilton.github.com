@@ -1708,14 +1708,28 @@ body {
 .footer__sub {
   display: block;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #1D1C20;
   color: #4e4c56; }
   .footer__sub a {
-    color: #FC6A6C;
-    text-decoration: none; }
+    color: #9a97a4;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out; }
     .footer__sub a:hover {
-      color: #fb383b; }
+      color: #b5b2bc;
+      transition: all 0.2s ease-in-out; }
+  .footer__sub p {
+    font-size: 12px; }
+  .footer__sub .copyright {
+    float: left; }
+    @media (max-width: 992px) {
+      .footer__sub .copyright {
+        float: none; } }
+  .footer__sub .developed {
+    float: right; }
+    @media (max-width: 992px) {
+      .footer__sub .developed {
+        float: none; } }
 
 .home-intro {
   color: #FFFFFF;
