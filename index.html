@@ -7,12 +7,12 @@ title: General builder, Rhondda Cynon Taff, South Wales
   <div class="home-intro__container">
     <h1 class="animate-pop-in">Hello, I'm Greg Milton.</h1>
     <h2 class="animate-pop-in delay-1s">A <span class="home-intro__job">general builder</span> who <span class="home-intro__speciality">specialises in plastering</span>, based in Rhondda Cynon Taff, South Wales.</h2>
-    <a href="#" class="animate-pop-in">Services</a>
-    <a href="#" class="animate-pop-in">Get a quote</a>
+    <button class="animate-pop-in" data-scroll-to="services">Services</button>
+    <a href="/quote" class="animate-pop-in">Get a quote</a>
   </div>
 </div>
 
-<div class="home-services">
+<div id="services" class="home-services">
   <div class="container">
 
     <div class="row">
@@ -46,9 +46,6 @@ title: General builder, Rhondda Cynon Taff, South Wales
           <p>Small repairs to complete renovations on all pitched and flat roofs.</p>
         </div>
       </div>
-    </div>
-
-    <div class="row row-flex">
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <div class="home-services__panel">
           <h4>Stonework</h4>
@@ -76,3 +73,6 @@ title: General builder, Rhondda Cynon Taff, South Wales
     </div>
   </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/scroll-to.js"></script>

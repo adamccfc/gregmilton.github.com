@@ -1635,6 +1635,26 @@ body {
   background-color: white;
   margin: 0; }
 
+.btn {
+  border-radius: 30px;
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all 1s ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 20px 10px; }
+  .btn:hover {
+    background-color: #FFFFFF;
+    color: #FC6A6C;
+    cursor: pointer; }
+  .btn__white--ghost {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background: none; }
+
 @-webkit-keyframes pop-in {
   0% {
     opacity: 0;
@@ -1659,6 +1679,43 @@ body {
   -webkit-animation: pop-in ease-out 1.5s forwards;
           animation: pop-in ease-out 1.5s forwards;
   opacity: 0; }
+
+.footer__pre {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #FC6A6C; }
+  .footer__pre p {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px; }
+    .footer__pre p a {
+      margin: 0 20px; }
+      @media (max-width: 992px) {
+        .footer__pre p a {
+          margin-top: 20px;
+          width: auto;
+          display: block; } }
+
+.footer__main {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #1A181D; }
+
+.footer__sub {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #1D1C20;
+  color: #4e4c56; }
+  .footer__sub a {
+    color: #FC6A6C;
+    text-decoration: none; }
+    .footer__sub a:hover {
+      color: #fb383b; }
 
 .home-intro {
   color: #FFFFFF;
@@ -1699,7 +1756,7 @@ body {
       @media (max-width: 480px) {
         .home-intro__container h2 {
           font-size: 1.2rem; } }
-    .home-intro__container a {
+    .home-intro__container a, .home-intro__container button {
       border: 1px solid #FFFFFF;
       border-radius: 30px;
       display: inline-block;
@@ -1711,10 +1768,12 @@ body {
               animation-delay: 2s;
       text-transform: uppercase;
       font-size: 12px;
-      margin: 20px 10px; }
-      .home-intro__container a:hover {
+      margin: 20px 10px;
+      background: none; }
+      .home-intro__container a:hover, .home-intro__container button:hover {
         background-color: #FFFFFF;
-        color: #FC6A6C; }
+        color: #FC6A6C;
+        cursor: pointer; }
 
 .home-services {
   background-color: #F6FAFC;

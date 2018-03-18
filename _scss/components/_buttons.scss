@@ -1,0 +1,27 @@
+.btn {
+  border-radius: 30px;
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all 1s ease;
+  animation-delay: 2s;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 20px 10px;
+
+  &:hover {
+    background-color: $white;
+    color: $brand-primary;
+    cursor: pointer;
+  }
+
+  &__white {
+
+    &--ghost {
+      color: $white;
+      border: 1px solid $white;
+      background: none;
+    }
+  }
+
+}

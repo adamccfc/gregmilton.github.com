@@ -1,0 +1,49 @@
+.footer {
+  &__pre {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $brand-primary;
+
+    p {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      display: inline-block;
+      font-size: 20px;
+
+      a {
+        margin: 0 20px;
+        @media(max-width: $screen-md) {
+          margin-top: 20px;
+          width: auto;
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__main {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1A181D;
+  }
+
+  &__sub {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1D1C20;
+    color: lighten(#1D1C20, 20%);
+
+    a {
+      color: $brand-primary;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($brand-primary, 10%);
+      }
+    }
+  }
+}
